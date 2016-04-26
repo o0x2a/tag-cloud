@@ -20,14 +20,14 @@ describe('Tag Cloud unit tests', function () {
     it('should returns a router object', function () {
       expect(apiRoute.name).to.be.eql('router');
       expect(apiRoute.stack).to.have.length.of.at.least(3);
-    })
+    });
   });
 
   describe('expressApp.js', function () {
     const expressApp = require('../../src/expressApp');
     it('should returns an express app object', function () {
       expect(expressApp.get('env')).to.be.eql(expressApp.settings.env)
-    })
+    });
   });
 
   describe('feedClient.js', function () {
@@ -38,7 +38,7 @@ describe('Tag Cloud unit tests', function () {
       fetchFeed('https://news.ycombinator.com/rss', transformer).then((result) => {
         expect(result).to.have.length.of(30);
       }).then(done).catch(done);
-    })
+    });
   });
 
   describe('twitterClient.js', function () {
@@ -50,7 +50,7 @@ describe('Tag Cloud unit tests', function () {
         const statuses = result[0].data.statuses;
         expect(statuses).to.have.length.of(100);
       }).then(done).catch(done);
-    })
+    });
   });
 
   describe('tagTransformers.js', function () {

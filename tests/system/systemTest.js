@@ -22,10 +22,10 @@ describe('Tag Cloud system tests', function () {
 
   describe('API', function () {
     before(() => {
-        nock.load(path.resolve(__dirname, '../mocks/twitter.nock.json'));
-        nock.load(path.resolve(__dirname, '../mocks/feed.nock.json'));
-      }
-    );
+      nock.load(path.resolve(__dirname, '../mocks/twitter.nock.json'));
+      nock.load(path.resolve(__dirname, '../mocks/feed.nock.json'));
+    });
+
     it('/api/twitter?q=amazing', function (done) {
       const expectedResult = require('../test-data/twitter.route.expectation.json');
       requestApp.get('/api/twitter?q=amazing')
