@@ -1,0 +1,155 @@
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ */
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.content-body,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+/* Supporting marketing content */
+.content-body {
+  margin: 40px 0;
+}
+.content-body p + h4 {
+  margin-top: 28px;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.tags {
+  padding: 9px 12px;
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+
+  line-height: 2.4em;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  text-transform: none;
+  text-align: justify;
+  text-indent: 0ex;
+}
+
+.word {
+  display:inline-block;
+  margin: 8px;
+}
+
+figure {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 10px;
+  -webkit-margin-end: 10px;
+}
+
+@media (min-width: 768px) {
+  .cloud-container {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.cloud-container {
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0 -15px 15px;
+}
+
+span.tag0 { font-size: 1.0em; padding: 0; color: #ACC1F3; z-index: 10; position: relative}
+span.tag0 a {text-decoration: none;  color: #ACC1F3;}
+span.tag1 { font-size: 1.4em; padding: 0; color: #ACC1F3; z-index: 9; position: relative}
+span.tag1 a {text-decoration: none; color: #ACC1F3;}
+span.tag2 { font-size: 1.8em; padding: 0; color: #86A0DC; z-index: 8; position: relative}
+span.tag2 a {text-decoration: none; color: #86A0DC;}
+span.tag3 { font-size: 2.2em; padding: 0; color: #86A0DC; z-index: 7; position: relative}
+span.tag3 a {text-decoration: none; color: #86A0DC;}
+span.tag4 { font-size: 2.6em; padding: 0; color: #607EC5; z-index: 6; position: relative}
+span.tag4 a {text-decoration: none; color: #607EC5;}
+span.tag5 { font-size: 3.0em; padding: 0; color: #607EC5; z-index: 5; position: relative}
+span.tag5 a {text-decoration: none; color: #607EC5;}
+span.tag6 { font-size: 3.3em; padding: 0; color: #4C6DB9; z-index: 4; position: relative}
+span.tag6 a {text-decoration: none; color: #4C6DB9;}
+span.tag7 { font-size: 3.6em; padding: 0; color: #395CAE; z-index: 3; position: relative}
+span.tag7 a {text-decoration: none; color: #395CAE;}
+span.tag8 { font-size: 3.9em; padding: 0; color: #264CA2; z-index: 2; position: relative}
+span.tag8 a {text-decoration: none; color: #264CA2;}
+span.tag9 { font-size: 4.2em; padding: 0; color: #133B97; z-index: 1; position: relative}
+span.tag9 a {text-decoration: none; color: #133B97;}
+span.tag10 { font-size: 4.5em; padding: 0; color: #002A8B; z-index: 0; position: relative}
+span.tag10 a {text-decoration: none; color: #002A8B;}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .content-body,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

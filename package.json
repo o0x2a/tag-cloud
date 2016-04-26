@@ -1,0 +1,62 @@
+{
+  "name": "tag-cloud",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "code-guru/tag-cloud",
+  "private": true,
+  "author": "Mehdi Tirgar",
+  "license": "MIT",
+  "keywords": ["tag", "cloud"],
+  "main": "bin/www",
+  "eslintConfig": {
+    "extends": "airbnb/legacy",
+    "env": { "es6": true },
+    "rules": {
+      "strict": [1, "global"],
+      "comma-dangle": 1,
+      "no-console": 1,
+      "max-len": [2, 150, 4],
+      "no-use-before-define": 0,
+      "object-curly-spacing": 0,
+      "no-unused-vars": 0,
+      "new-cap": [0, {"capIsNewExceptions": ["S"]}],
+      "func-names": 0
+    }
+  },
+  "dependencies": {
+    "body-parser": "~1.15.0",
+    "cheerio": "^0.20.0",
+    "cookie-parser": "^1.4.1",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.13.4",
+    "feedparser": "^1.1.4",
+    "highland": "^2.7.4",
+    "lodash": "^4.11.1",
+    "mathjs": "^3.2.0",
+    "morgan": "~1.7.0",
+    "request": "^2.72.0",
+    "serve-favicon": "~2.3.0",
+    "twit": "^2.2.3",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.8.0",
+    "eslint-config-airbnb": "7.0.0",
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^2.4.5",
+    "nock": "^8.0.0",
+    "sinon": "^2.0.0-pre",
+    "supertest": "^1.2.0"
+  },
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint.js src test",
+    "test": "NODE_ENV=test ./node_modules/mocha/bin/_mocha --recursive tests",
+    "test:unit": "NODE_ENV=test ./node_modules/mocha/bin/_mocha --recursive tests/unit",
+    "test:system": "NODE_ENV=test ./node_modules/mocha/bin/_mocha --recursive tests/system",
+    "test:watch": "NODE_ENV=test mocha --reporter min --watch --recursive tests",
+    "test:cover": "NODE_ENV=test node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --recursive tests",
+    "start": "DEBUG=tag-cloud:* node ./bin/www"
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="<%= title %>">
+  <meta name="author" content="Mehdi Tirgar">
+  <link rel="icon" href="favicon.ico">
+
+  <title><%= title %></title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation"><a href="#"></a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted"><%= title %></h3>
+  </div>
+  <div class="alert alert-danger hidden" id="error-alert" role="alert"></div>
+  <div class="row content-body">
+    <div class="col-lg-12">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#twitter" aria-controls="twitter" role="tab" data-toggle="tab">Twitter</a></li>
+        <li role="presentation" class=""><a href="#feed" aria-controls="feed" role="tab" data-toggle="tab">Feed</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="twitter">
+          <form class="cloud-container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Search for..."> <span
+                    class="input-group-btn"> <button class="btn btn-default" type="submit">Go!</button> </span></div>
+              </div>
+            </div>
+          </form>
+          <figure class="tags hidden">
+          </figure>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="feed">
+          <form class="cloud-container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Feed url..."> <span
+                    class="input-group-btn"> <button class="btn btn-default" type="submit">Go!</button> </span></div>
+              </div>
+            </div>
+          </form>
+          <figure class="tags hidden">hoho
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">made with <span class="glyphicon glyphicon-heart" aria-hidden="true"
+                                            style="color:red"></span> by <a
+          href="https://github.com/code-guru/viaplay-trailer">@code-guru</a></p>
+    </div>
+  </footer>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script src="javascripts/app.js"></script>
+</body>
+</html>
