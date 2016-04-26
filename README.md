@@ -23,8 +23,8 @@ Run one, or a combination of the following commands to lint and test your code:
 ```sh
 $ npm run lint          # Lint the source code
 $ npm test              # Run unit and systems tests
-$ npm test:unit         # Run unit tests
-$ npm test:system       # Run system tests
+$ npm run test:unit         # Run unit tests
+$ npm run test:system       # Run system tests
 $ npm run test:watch    # Run unit tests and watch files for changes
 $ npm run test:cover    # Run unit tests with code coverage by Istanbul
 ```
