@@ -26,8 +26,7 @@ const addSize = stream => stream
   });
 
 const toWords = stream => stream
-  .map(x => x + ' ')
-  .reduce1((a, b) => a + b)
+  .reduce1((a, b) => `${a} + ${b}`)
   .map(utils.htmlToText)
   .map(x => x.replace(/https?:\/\/[^\s]*/g, ''))                   /* remove links */
   .map(x => x.replace(/[^\x00-\x7F]/g, ''))                        /* remove non-ascii characters */
@@ -42,8 +41,9 @@ const commonTransform = stream => stream
   .flatMap(_.pairs)                                                /* create key value pairs */
   .map(x => ({word: x[0], count: x[1].length}))                    /* create collection of { word, count } objects */
   .reject(x => x.count < 2)                                        /* remove all words with less than 2 occurrence */
-  .sortBy((a, b) => a.word.localeCompare(b.word, 'se-SV'))         /* sort by word count */
+  .sortBy((a, b) => b.count - a.count)                             /* sort by number of occurrence */
   .take(50)                                                        /* limit result to 50 */
+  .sortBy((a, b) => a.word.replace(/[@#]/, '').localeCompare(b.word.replace(/[@#]/, ''), 'se-SV'))
   .through(addSize);                                               /* add size parameter */
 
 
