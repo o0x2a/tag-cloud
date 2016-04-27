@@ -70,8 +70,8 @@ Lines        : 94.26% ( 115/122 )
 ```
 
 ### Screenshots
-![Twitter](http://i.imgur.com/ZjhoP5t.png)
-![Feed](http://i.imgur.com/EJvdAdd.png)
+![Twitter](http://i.imgur.com/C9TQ0J1.png)
+![Feed](http://i.imgur.com/7y5Ipj6.png)
 
 ### License
 
